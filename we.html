@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Number Patterns</title>
+</head>
+<body>
+<script>
+var i, j, k;
+var n = 5;
+
+// Descending numbers pattern
+for (i = n; i >= 1; i--) {
+    // Print numbers from i to 1
+    for (j = i; j >= 1; j--)
+        document.write(j);
+    
+    // Print spaces for formatting (optional)
+    for (k = n - i; k >= 1; k--)
+        document.write("&nbsp;"); // Adding a space for formatting
+    
+    // Line break after each row
+    document.write("<br>");
+}
+
+document.write("<br>"); // Additional line break for spacing
+
+// Descending numbers pattern
+for (i = n; i >= 1; i--) {
+    // Print numbers from i to 1
+    for (j = i; j >= 1; j--)
+        document.write(j);
+    
+    // Line break after each row
+    document.write("<br>");
+}
+</script>
+</body>
+</html>

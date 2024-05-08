@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <span id="hours">00</span>:
+    <span id="minutes">00</span>:
+    <span id="seconds">00</span>
+    
+</body>
+
+<script>
+    
+    var time =  new Date()
+    var seconds 
+    var minutes 
+    var hours 
+    
+    setInterval(function() {
+        time = new Date()
+        seconds = time.getSeconds()
+        minutes = time.getMinutes()
+        hours = time.getHours()
+
+        document.querySelector("#seconds").innerHTML = seconds
+        document.querySelector("#hours").innerHTML = hours
+        document.querySelector("#minutes").innerHTML = minutes
+
+    }, 1000)
+
+</script>
+</html>

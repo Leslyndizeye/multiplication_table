@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        
+        <input type="text" id="output" placeholder="insert radius">
+        
+        <button id="btn" onclick="add()">add</button>
+        <p id ="out">output</p>
+    </div>
+
+</body>
+<script>
+    
+    function add(){
+    var pi = 3.14;
+    var radius = parseFloat(document.getElementById("output").value);
+    var radius = parseFloat(document.getElementById("output").value);
+    var sum = pi * radius * radius 
+    document.getElementById("out").innerHTML = "The area of the circle is:"+ sum
+     if(sum > 0){
+         document.getElementById("out").innerHTML = "The area of the circle is:" + sum
+
+     }
+     else{
+         alert("please insert a number greater than 0")
+     }
+
+    }
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="number" placeholder="list number">
+        <p id ="out"></p>
+        <button  onclick="add()">add</button>
+    </div>
+</body>
+<script>
+    function add(){
+        
+        for (i = 0 ; i < 10 ; i ++){
+             if (i == 4)
+             {
+                 document.getElementById("out").innerHTML += "i am four"
+             } 
+             else if ( i == 9){
+                 document.getElementById("out").innerHTML += "<br>"+ "i am nine"
+             }
+             else{
+                 document.getElementById("out").innerHTML +="<br>" + i
+             }
+             }     
+    }
+
+</script>
+</html>

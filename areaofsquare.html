@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center">Area of Square</h1>
+    <div class="container" style="display: flex;">
+        <input style="margin-left: 10px;" type="text" id="number" placeholder="insert length  " >
+        <input  style="margin-left: 10px;" type="text" id="output" placeholder="insert width">
+        <br >
+        <button style="margin-left: 10px;" id="btn" onclick="add()">add</button>
+        <br>
+        <p style id ="out">output</p>
+
+    </div>
+    <script>
+        function add(){
+            var number = parseFloat(document.getElementById("number").value);
+            var output = parseFloat(document.getElementById("output").value);
+            var sum = number * output;
+            document.getElementById("out").innerHTML = "The area of the square is:" + sum
+        }
+    </script>
+    
+</body>
+</html>
